@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID-19 Statistics</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/btns.style.css">
+  <link rel="stylesheet" href="styles//select.style.css">
+  <link rel="stylesheet" href="./styles/loading_spinner.style.css">
+  <link rel="stylesheet" href="./styles/normalize.css">
+</head>
+<body>
+  <main id="main">  
+    <h1 id="title">Covid 19 Stats</h1>
+    <div class="spinner"></div>
+    <div class="chart-container hidden opacity-0">
+      <canvas id="myChart"></canvas>
+    </div>
+    <div class="btns-container">
+      <div class="cases-cotainer">
+        <button class="btn" data-type="confirmed">Confirmed</button>
+        <button class="btn" data-type="deaths">Deaths</button>
+        <button class="btn" data-type="recovered">Recovered</button>
+        <button class="btn" data-type="critical">Critical</button>
+      </div>
+      <div class="regions-container">
+        <button class="btn" data-type="africa">Africa</button>
+        <button class="btn" data-type="america">America</button>
+        <button class="btn" data-type="asia">Asia</button>
+        <button class="btn" data-type="europe">Europe</button>
+        <button class="btn" data-type="world">world</button>
+      </div>
+    </div>
+    <div class="country-list-container">
+      <select name="selectCountries" id="selectCountries"></select>
+      <button id="timeline" class="btn hidden">Timeline</button>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+  <script src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
+  <script src="./scripts/main.js" type="module"></script>
+</body> 
+</html>
