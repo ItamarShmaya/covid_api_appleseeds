@@ -36,7 +36,8 @@ body {
 }
 .chart-container {
   position: relative;
-  width: 60vw;
+  width: 80vw;
+  height: 70vh;
   transition: all 1s linear;
 }
 

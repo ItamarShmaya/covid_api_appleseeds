@@ -42,7 +42,8 @@ export const config = {
       },
       legend: {
         Position : "bottom"
-      }
+      },
+      maintainAspectRatio: false
   }
 }
 
